@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(255, 180, 180, 0.8);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .navbar a {
+    color: #333;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .navbar a:hover {
+    background-color: #feb47b;
+    color: #fffeef;
+  }
+  
+  .navbar .brand {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  h1 {
+    color: crimson;
+    text-align: center;
+    background-color: rgb(206, 163, 163);
+    padding: 10px;
+  }
+  
+  h2 {
+    color: rgb(178, 92, 34);
+    background-color: cornsilk;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  .circle-text {
+    width: 600px;
+    height: 480px;
+    border-radius: 60%;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+    line-height: 1.7;
+  }
+  
+  .highlight1 {
+    color: rgb(174, 0, 255);
+  }
+  
+  .highlight2 {
+    color: blue;
+  }
