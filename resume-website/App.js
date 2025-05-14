@@ -102,7 +102,7 @@ const App = () => {
       <h3><span className="highlight">Bachelor's Degree 🎓</span></h3>
       <p>B.E in Computer Science and Engineering</p>
       <p>Kalaignarkarunanidhi Institute of Technology, Pallapalayam-Coimbatore</p>
-      <p>• Currently pursuing <b>3rd year</b></p>
+      <p>• Currently pursuing: <b>3rd year</b></p>
       <p>• Current CGPA: <b>8.94</b></p>
     </div>
 
