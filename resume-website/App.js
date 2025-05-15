@@ -92,7 +92,7 @@ const App = () => {
 
     <div className="education-item">
       <h3><span className="highlight">Schooling 📚</span></h3>
-      <p>Sri Jayendra Sarawathy Vidhyalaya Matriculation School Ondipudur</p>
+      <p>Sri Jayendra Sarawathy Vidhyalaya Matriculation School Ondipudur.</p>
       <p>• Secondary Education – Secured <b>78%</b></p>
 <p>• Higher Secondary Education – Secured <b>85%</b></p>
 
@@ -101,7 +101,7 @@ const App = () => {
     <div className="education-item">
       <h3><span className="highlight">Bachelor's Degree 🎓</span></h3>
       <p>B.E in Computer Science and Engineering</p>
-      <p>Kalaignarkarunanidhi Institute of Technology, Pallapalayam-Coimbatore</p>
+      <p>Kalaignarkarunanidhi Institute of Technology, Pallapalayam-Coimbatore.</p>
       <p>• Currently pursuing: <b>3rd year</b></p>
       <p>• Current CGPA: <b>8.94</b></p>
     </div>

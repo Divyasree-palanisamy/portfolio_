@@ -14,6 +14,9 @@ body.dark-mode {
 .container {
   max-width: 1200px;
   margin: auto;
+  background: rgba(219, 194, 237, 0.367);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
   padding: 20px;
 }
 
@@ -238,6 +241,15 @@ section {
 .dark-mode .home-content {
   background: rgba(44, 44, 44, 0.8);
   color: #f4f4f4;
+}
+.education-item {
+  border: 4px dashed #4CAF50;
+  /* Use a stylish green, you can adjust */
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #F9FFF9;
+  /* Soft background to look prettier (optional) */
 }
 /* Transparent Box Styling */
 .intro-box {
