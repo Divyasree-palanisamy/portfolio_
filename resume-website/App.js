@@ -77,7 +77,7 @@ const App = () => {
         Explore the sections above to learn more about me.
       </p>
       
-      <p className="quote-text" style={{ color: '#d4af37' }}>
+      <p className="quote-text" style={{ color: '#d4af37', fontFamily:'times-new-roman'}}>
   <b>"The only way to do great work is to love what you do."</b>
 </p>
 
@@ -91,7 +91,7 @@ const App = () => {
     <h2>Education</h2>
 
     <div className="education-item">
-      <h3><span className="highlight">Schooling 📚</span></h3>
+      <h3><span className="highlight" style={{outline:'4px dashed white'}}>Schooling 📚</span></h3>
       <p>Sri Jayendra Sarawathy Vidhyalaya Matriculation School Ondipudur.</p>
       <p>• Secondary Education – Secured <b>78%</b></p>
 <p>• Higher Secondary Education – Secured <b>85%</b></p>
