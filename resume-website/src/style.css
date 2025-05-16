@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   background-color: #f4f4f4;
   color: #333;
   transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
@@ -209,6 +209,8 @@ section {
 /* Home Content */
 .home-content {
   max-width: 800px;
+  color: #000;
+  font-weight: bold;
   margin: 50px auto; /* Added some margin at the top */
   background: rgba(255, 255, 255, 0.2); /* Slightly less transparent */
   padding: 30px;
@@ -228,8 +230,7 @@ section {
 
 /* Quote Text */
 .quote-text {
-  font-size: 1.2rem;
-  font-style: italic;
+  font-style: Arial;
   color: #d1ae64; /* Gold */
   font-weight: bold;
 }
@@ -566,11 +567,14 @@ a:hover {
   border-radius: 8px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
-
+.certification-category h3{
+  color: #007bff;
+    font-weight: bold;
+}
 /* Dark Mode */
 .dark-mode .certification-category {
   background-color: #333; /* Dark Grey Background */
-  color: #fff; /* White Text */
+  color: #ffffff; /* White Text */
   box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.2);
 }
 .education-item {
@@ -769,4 +773,14 @@ video {
 /* Dark Mode adjustments for bold text */
 .dark-mode .activity-card b {
   color: #ccc;
+}
+.project-grid h3{
+  color: #007bff;
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  
+color: white;  /* or any color matching your theme */
 }

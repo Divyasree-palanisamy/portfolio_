@@ -73,12 +73,12 @@ const App = () => {
     <h1>Divyasree P</h1>
       <p>Computer Science Engineer | Software Developer | Web Developer
       </p>
-      <p className="intro-text">
+      <p className="intro-text" style={{outline:'2px dashed white',padding:'20px'}}>
         This website serves as a digital portfolio of my skills, experiences, and achievements. 
         Explore the sections above to learn more about me.
       </p>
       
-      <p className="quote-text" style={{ color: '#d4af37' }}>
+      <p className="quote-text" style={{ color: '#d4af37' , fontFamily: 'Arial' }}>
   <b>"The only way to do great work is to love what you do."</b>
 </p>
 
@@ -93,7 +93,7 @@ const App = () => {
 
     <div className="education-item">
       <h3><span className="highlight">Schooling 📚</span></h3>
-      <p>Sri Jayendra Sarawathy Vidhyalaya Matriculation School Ondipudur</p>
+      <p><b>Sri Jayendra Sarawathy Vidhyalaya Matriculation School Ondipudur.</b></p>
       <p>• Secondary Education – Secured <b>78%</b></p>
 <p>• Higher Secondary Education – Secured <b>85%</b></p>
 
@@ -102,7 +102,7 @@ const App = () => {
     <div className="education-item">
       <h3><span className="highlight">Bachelor's Degree 🎓</span></h3>
       <p>B.E in Computer Science and Engineering</p>
-      <p>Kalaignarkarunanidhi Institute of Technology, Pallapalayam-Coimbatore</p>
+      <p><b>Kalaignarkarunanidhi Institute of Technology, Pallapalayam-Coimbatore.</b></p>
       <p>• Currently pursuing <b>Final year</b></p>
       <p>• Current CGPA: <b>8.96 (Upto 5th Semester)</b></p>
     </div>
@@ -137,7 +137,7 @@ const App = () => {
       </div>
 
       <div className="skill-item">
-        <h4>Machine Learning</h4>
+        <h4>Other</h4>
         <p>Machine Learning</p>
       </div>
       
@@ -464,7 +464,7 @@ const App = () => {
 {activeSection === "Contact" && (
   <section className="contact fade-in">
     <div className="contact-container">
-      
+      <h2>Contact</h2>
       <div className="contact-card">
         <h3>Contact Information</h3>
         <p><b>Name :</b> Divyasree.P</p>
@@ -508,7 +508,7 @@ const App = () => {
   </ul>
 
     <p><b>Resume:</b> 
-      <a href="https://drive.google.com/file/d/1-bSvJ0KY_tLADdzxMo_8-mXjLtAoladm/view?usp=drivesdk" 
+      <a href="https://drive.google.com/file/d/1mZAwpGUmwq4pN6f-cJ8wwlmTBk_mdwzW/view?usp=sharing" 
          target="_blank" 
          rel="noopener noreferrer"> Download Resume</a>
     </p>
