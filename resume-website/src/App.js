@@ -36,8 +36,15 @@ const App = () => {
       name: "InternSpace Explorer",
       description: "It is a website designed using HTML, CSS and JS. This website serves as a very efficient in searching for the internships based on the user requirements quickly by having more filter options and to produce all the details directly. It is very helpful in retrieving the Internships that user search for within a quick time.",
       techStack: ["HTML","CSS","JavaScript","Python","Flask","MySQL Workbench"],
-      github: "https://github.com/Divyasree-palanisamy/Internship-Explorer",
+      github: "https://github.com/Divyasree-palanisamy/InternSpace_Explorer_",
     },
+    {
+      name: "Student ToDo Planner",
+description:
+"Student ToDo Planner is a task management app designed for college students to organize their study plans efficiently. It features task tracking with due dates, WhatsApp notifications for task updates and daily reminders, and a study materials section where students can add, store, and download notes by subject—helping reduce mobile clutter and improving academic productivity.",
+techStack: ["React", "JavaScript", "Twilio WhatsApp API", "CSS", "HTML"],
+github: "https://github.com/Divyasree-palanisamy/InternSpace_Explorer_"
+    }
     
   ];
 
@@ -49,14 +56,14 @@ const App = () => {
   </header>
       <nav className="navbar">
         <ul>
-          <li><a href="#" onClick={() => setActiveSection("Home")}>Home</a></li>
-          <li><a href="#" onClick={() => setActiveSection("Education")}>Education</a></li>
-          <li><a href="#" onClick={() => setActiveSection("Skills")}>Skills</a></li>
-          <li><a href="#" onClick={() => setActiveSection("Certifications")}>Certifications</a></li> 
-          <li><a href="#" onClick={() => setActiveSection("CoCurricular")}>Co-Curricular</a></li>
+          <li><a href="#" onClick={() => setActiveSection("Home")}>🏠Home</a></li>
+          <li><a href="#" onClick={() => setActiveSection("Education")}>🎓Education</a></li>
+          <li><a href="#" onClick={() => setActiveSection("Skills")}>🛠️Skills</a></li>
+          <li><a href="#" onClick={() => setActiveSection("Certifications")}>📜Certifications</a></li> 
+          <li><a href="#" onClick={() => setActiveSection("CoCurricular")}>🎯Co-Curricular</a></li>
 
-          <li><a href="#" onClick={() => setActiveSection("Projects")}>Projects</a></li>
-          <li><a href="#" onClick={() => setActiveSection("Contact")}>Contact</a></li>
+          <li><a href="#" onClick={() => setActiveSection("Projects")}>💻Projects</a></li>
+          <li><a href="#" onClick={() => setActiveSection("Contact")}>📞Contact</a></li>
         </ul>
         <button className="dark-mode-toggle" onClick={toggleDarkMode}>
           {darkMode ? "Light Mode" : "Dark Mode"}
@@ -73,7 +80,7 @@ const App = () => {
     <h1>Divyasree P</h1>
       <p>Computer Science Engineer | Software Developer | Web Developer
       </p>
-      <p className="intro-text" style={{outline:'2px dashed white',padding:'20px'}}>
+      <p className="intro-text" >
         This website serves as a digital portfolio of my skills, experiences, and achievements. 
         Explore the sections above to learn more about me.
       </p>
@@ -463,8 +470,14 @@ const App = () => {
 
 {activeSection === "Contact" && (
   <section className="contact fade-in">
+<body class="light-mode">
+  <div class="w-full">
+    <h2>Contact</h2>
+  </div>
+</body>
+
+
     <div className="contact-container">
-      <h2>Contact</h2>
       <div className="contact-card">
         <h3>Contact Information</h3>
         <p><b>Name :</b> Divyasree.P</p>
@@ -475,7 +488,7 @@ const App = () => {
       
       <div className="contact-card">
         <h3>Social Media Links</h3>
-        <p><b>Email ✉ : </b> divyasreep12@gmail.com</p>
+        <p><b>Email ✉ : </b> divyasreep12@gmail.com, kit26.cse17@gmail.com</p>
         <p><b>LinkedIn 🌐: </b> 
           <a href="https://www.linkedin.com/in/divya-sree-p-9603b9265" target="_blank" rel="noopener noreferrer">
            LinkedIn Profile
@@ -483,7 +496,7 @@ const App = () => {
         </p>
         <p><b>GitHub 👨🏻‍💻: </b> 
           <a href="https://github.com/Divyasree-palanisamy" target="_blank" rel="noopener noreferrer">
-            GitHub
+            GitHub Profile
           </a>
         </p>
         <p><b>CodeChef 🍽️: </b>  
@@ -510,7 +523,7 @@ const App = () => {
     <p><b>Resume:</b> 
       <a href="https://drive.google.com/file/d/1mZAwpGUmwq4pN6f-cJ8wwlmTBk_mdwzW/view?usp=sharing" 
          target="_blank" 
-         rel="noopener noreferrer"> Download Resume</a>
+         rel="noopener noreferrer"> View Resume</a>
     </p>
   </div>
 </div>
