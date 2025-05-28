@@ -1,0 +1,6 @@
+git rm -r --cached resume-website
+Remove-Item -Recurse -Force .git\modules\resume-website
+Remove-Item -Force .gitmodules
+git add .
+git commit -m "Re-adding resume-website as a regular folder"
+git push origin main

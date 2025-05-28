@@ -78,7 +78,7 @@ github: "https://github.com/Divyasree-palanisamy/InternSpace_Explorer_"
     <div className="home-content">
     <img src={myPhoto} alt="Divyasree P" className="profile-photo" />
     <h1>Divyasree P</h1>
-      <p>Computer Science Engineer | Software Developer | Web Developer
+      <p>Computer Science Engineer | FrontEnd Developer
       </p>
       <p className="intro-text" >
         This website serves as a digital portfolio of my skills, experiences, and achievements. 

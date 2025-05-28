@@ -87,10 +87,13 @@ section {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
 }
+
 /* Default (Light Mode) */
 .project-card {
-  background-color: #f0f0f0; /* Light Gray */
-  color: black; /* Black Text */
+  background-color: #f0f0f0;
+  /* Light Gray */
+  color: black;
+  /* Black Text */
   padding: 20px;
   border-radius: 10px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
@@ -99,8 +102,10 @@ section {
 
 /* Dark Mode */
 .dark-mode .project-card {
-  background-color: #222; /* Dark Gray */
-  color: white; /* White Text */
+  background-color: #222;
+  /* Dark Gray */
+  color: white;
+  /* White Text */
   box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.2);
 }
 
@@ -156,6 +161,7 @@ section {
 .dark-mode .footer {
   background: #2c2c2c;
 }
+
 /* Home Section Styling */
 .home {
   text-align: center;
@@ -167,15 +173,17 @@ section {
 .marquee-text {
   font-size: 2rem;
   font-weight: bold;
-  color: #ffa200; /* Gold color */
+  color: #ffa200;
+  /* Gold color */
   margin-bottom: 20px;
 }
 
-
 /* Default (Light Mode) */
 .contact-card {
-  background-color: #e6f7ff; /* Light Blue (Same as Skills Section in Light Mode) */
-  color: black; /* Black Text */
+  background-color: #e6f7ff;
+  /* Light Blue (Same as Skills Section in Light Mode) */
+  color: black;
+  /* Black Text */
   padding: 20px;
   border-radius: 10px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
@@ -184,25 +192,30 @@ section {
 
 /* Dark Mode */
 .dark-mode .contact-card {
-  background-color: #222; /* Dark Gray (Same as Skills Section in Dark Mode) */
-  color: white; /* White Text */
+  background-color: #222;
+  /* Dark Gray (Same as Skills Section in Dark Mode) */
+  color: white;
+  /* White Text */
   box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.2);
 }
 
 /* Contact Links Styling */
 .contact-card a {
-  color: #007bff; /* Blue Links */
+  color: #007bff;
+  /* Blue Links */
   text-decoration: none;
   font-weight: bold;
 }
 
 .dark-mode .contact-card a {
-  color: #1e90ff; /* Lighter Blue in Dark Mode */
+  color: #1e90ff;
+  /* Lighter Blue in Dark Mode */
 }
 
 
 .dark-mode .footer {
-  background-color: #222; /* Dark Mode */
+  background-color: #222;
+  /* Dark Mode */
   color: white;
 }
 
@@ -212,19 +225,34 @@ section {
   max-width: 800px;
   color: #000;
   font-weight: bold;
-  margin: 50px auto; /* Added some margin at the top */
-  background: rgba(255, 255, 255, 0.2); /* Slightly less transparent */
+  margin: 50px auto;
+  /* Added some margin at the top */
+  background: rgba(255, 255, 255, 0.2);
+  /* Slightly less transparent */
   padding: 30px;
-  border-radius: 15px; /* Increased border-radius for a smoother look */
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Stronger shadow effect */
-  backdrop-filter: blur(10px); /* Adds a subtle blur effect for a glass-like appearance */
-  border: 1px solid rgba(255, 255, 255, 0.2); /* Light border for better contrast */
+  border-radius: 15px;
+  /* Increased border-radius for a smoother look */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  /* Stronger shadow effect */
+  backdrop-filter: blur(10px);
+  /* Adds a subtle blur effect for a glass-like appearance */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  /* Light border for better contrast */
+}
+
+/* Intro Text */
+.intro-text {
+  font-size: 1.2rem;
+  color: white;
+  font-weight: 500;
+  margin-bottom: 20px;
 }
 
 /* Quote Text */
 .quote-text {
   font-style: Arial;
-  color: #d1ae64; /* Gold */
+  color: #d1ae64;
+  /* Gold */
   font-weight: bold;
 }
 
@@ -233,15 +261,19 @@ section {
   background: rgba(44, 44, 44, 0.8);
   color: #f4f4f4;
 }
+
 /* Transparent Box Styling */
 .intro-box {
-  background: rgba(177, 175, 175, 0.6); /* Light transparent white */
+  background: rgba(255, 255, 255, 0.6);
+  /* Light transparent white */
   padding: 20px;
-  color:#f4f4f4;
+  color: #f4f4f4;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(10px); /* Adds a slight blur effect */
+  backdrop-filter: blur(10px);
+  /* Adds a slight blur effect */
 }
+
 /* Portfolio Title */
 .portfolio-title {
   text-align: center;
@@ -275,24 +307,29 @@ section {
 
 /* Dark Mode Transparent Box */
 .dark-mode .intro-box {
-  background: rgba(44, 44, 44, 0.7); /* Transparent dark color */
+  background: rgba(44, 44, 44, 0.7);
+  /* Transparent dark color */
   box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
 }
 
 /* Intro Text - Always Black */
-.dark-mode .intro-text {
-  font-size: 1rem;
-  color: rgb(248, 243, 243) !important;
-  font-weight: 100;
+.intro-text {
+  font-size: 1.1rem;
+  color: black !important;
+  font-weight: 500;
   margin-bottom: 20px;
-  text-align: center;
 }
+
 .skills-container {
   display: flex;
-  justify-content: center; /* Centers content */
-  gap: 40px; /* Adds spacing between columns */
-  max-width: 900px; /* Limits width for better structure */
-  margin: auto; /* Centers section */
+  justify-content: center;
+  /* Centers content */
+  gap: 40px;
+  /* Adds spacing between columns */
+  max-width: 900px;
+  /* Limits width for better structure */
+  margin: auto;
+  /* Centers section */
 }
 
 .skills-column {
@@ -328,8 +365,10 @@ section {
     width: 100%;
   }
 }
+
 .highlight {
-  color: #007bff; /* Blue color */
+  color: #007bff;
+  /* Blue color */
   font-weight: bold;
 }
 
@@ -373,13 +412,15 @@ a:hover {
 }
 
 .dark-mode .section-title {
-  color: white; /* White color for dark mode */
+  color: white;
+  /* White color for dark mode */
 }
 
 .contact {
   text-align: left;
   padding: 40px;
-  background: #f8f9fa; /* Light modern background */
+  background: #f8f9fa;
+  /* Light modern background */
 }
 
 .section-title {
@@ -389,6 +430,7 @@ a:hover {
   text-align: center;
   color: #0b0b0b;
 }
+
 /* Light Mode (Default) */
 .contact-container {
   display: flex;
@@ -396,86 +438,94 @@ a:hover {
   flex-wrap: wrap;
   gap: 20px;
 }
-.light-mode .w-full h2{
-  text-align: center;
-}
 
 .contact-card {
   flex: 1;
-  background-color: #f0f0f0; /* Light Gray Box (Same as Skills Section) */
-  color: black; /* Black text */
+  background-color: #f0f0f0;
+  /* Light Gray Box (Same as Skills Section) */
+  color: black;
+  /* Black text */
   padding: 20px;
   border-radius: 10px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-  transition: all 0.1s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 /* Contact Info Items */
-.contact-card p{
-  background: #f8f9fa; /* Light Gray */
+.contact-card p {
+  background: #f8f9fa;
+  /* Light Gray */
   padding: 10px;
-  font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.9rem;
   margin: 10px 0;
   border-radius: 5px;
 }
 
 /* Dark Mode Styling */
 .dark-mode .contact-card {
-  background-color: #222; /* Dark Gray Box (Same as Skills Section) */
-  color: white; /* White text */
+  background-color: #222;
+  /* Dark Gray Box (Same as Skills Section) */
+  color: white;
+  /* White text */
   box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.2);
 }
 
 .dark-mode .contact-card p {
-  background: #333; /* Slightly lighter dark gray */
+  background: #333;
+  /* Slightly lighter dark gray */
 }
 
 /* Contact Section Headings */
 .contact-card h3 {
-  color: black; /* Black in Light Mode */
+  color: black;
+  /* Black in Light Mode */
 }
 
 /* Dark Mode */
 .dark-mode .contact-card h3 {
-  color: rgb(25, 95, 200); /* White in Dark Mode */
+  color: white;
+  /* White in Dark Mode */
 }
-/* Dark Mode */
-.light-mode .contact-card h3 {
-  color: #007bff;
-    /* Blue Links */  /* White in Dark Mode */
-}
+
 /* Contact Links Styling */
-.contact-card a{
-  color: #007bff; /* Blue Links */
+.contact-card a {
+  color: #007bff;
+  /* Blue Links */
   text-decoration: none;
   font-weight: bold;
 }
 
-.dark-mode .contact-card a ,li{
-  color: #1e90ff; /* Lighter Blue in Dark Mode */
+.dark-mode .contact-card a,
+li {
+  color: #1e90ff;
+  /* Lighter Blue in Dark Mode */
 }
+
 /* Ensure List Items are visible in both Light and Dark Mode */
 .contact-card ul {
-  color: black; /* Black in Light Mode */
+  color: black;
+  /* Black in Light Mode */
 }
 
 .dark-mode .contact-card ul {
-  color: white; /* White in Dark Mode */
+  color: white;
+  /* White in Dark Mode */
 }
 
 .contact-card li {
-  color: black; /* Black in Light Mode */
+  color: black;
+  /* Black in Light Mode */
 }
 
 .dark-mode .contact-card li {
-  color: white; /* White in Dark Mode */
+  color: white;
+  /* White in Dark Mode */
 }
 
 
 /* Footer Styling */
 .footer {
-  background-color: #f0f0f0; /* Light Mode (Same as Contact Box) */
+  background-color: #f0f0f0;
+  /* Light Mode (Same as Contact Box) */
   color: black;
   text-align: center;
   padding: 10px;
@@ -483,7 +533,8 @@ a:hover {
 }
 
 .dark-mode .footer {
-  background-color: #222; /* Dark Mode */
+  background-color: #222;
+  /* Dark Mode */
   color: white;
 }
 
@@ -500,6 +551,7 @@ a:hover {
   border-radius: 10px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
+
 /* Light Mode (Default) */
 .skills-container {
   display: flex;
@@ -510,8 +562,10 @@ a:hover {
 
 .skills-column {
   flex: 1;
-  background: #fff; /* White background in Light Mode */
-  color: #000; /* Black text */
+  background: #fff;
+  /* White background in Light Mode */
+  color: #000;
+  /* Black text */
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
@@ -519,7 +573,8 @@ a:hover {
 
 /* Skill items */
 .skill-item {
-  background: #f8f9fa; /* Light gray */
+  background: #f8f9fa;
+  /* Light gray */
   padding: 10px;
   margin: 10px 0;
   border-radius: 5px;
@@ -527,29 +582,40 @@ a:hover {
 
 /* Dark Mode Styling */
 .dark-mode .skills-column {
-  background: #222; /* Dark background */
-  color: #f9f6f6; /* White text in dark mode */
+  background: #222;
+  /* Dark background */
+  color: #f9f6f6;
+  /* White text in dark mode */
 }
 
 .dark-mode .skill-item {
-  background: #333; /* Slightly lighter dark gray */
+  background: #333;
+  /* Slightly lighter dark gray */
 }
+
 .skills-column h3 {
-  color: white; /* Always white */
+  color: white;
+  /* Always white */
 }
+
 /* Default (Light Mode) */
 .skills-column h3 {
-  color: black;  /* Text is black in Light Mode */
+  color: black;
+  /* Text is black in Light Mode */
 }
 
 /* Dark Mode */
 .dark-mode .skills-column h3 {
-  color: white;  /* Text turns white in Dark Mode */
+  color: white;
+  /* Text turns white in Dark Mode */
 }
+
 /* Default (Light Mode) */
 .skills-column {
-  background-color: #f0f0f0; /* Light Gray Box */
-  color: black; /* Black text */
+  background-color: #f0f0f0;
+  /* Light Gray Box */
+  color: black;
+  /* Black text */
   padding: 20px;
   border-radius: 10px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
@@ -558,31 +624,43 @@ a:hover {
 
 /* Dark Mode */
 .dark-mode .skills-column {
-  background-color: #222; /* Dark Gray Box */
-  color: white; /* White text */
+  background-color: #222;
+  /* Dark Gray Box */
+  color: white;
+  /* White text */
   box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.2);
 }
+
 .certification-category {
-  background-color: #f0f0f0; /* Light Grey Background */
-  color: #000; /* Black Text */
+  background-color: #f0f0f0;
+  /* Light Grey Background */
+  color: #000;
+  /* Black Text */
   padding: 15px;
   margin: 10px 0;
   border-radius: 8px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
-.certification-category h3{
+
+.certification-category h3 {
   color: #007bff;
-    font-weight: bold;
+  font-weight: bold;
 }
+
 /* Dark Mode */
 .dark-mode .certification-category {
-  background-color: #333; /* Dark Grey Background */
-  color: #ffffff; /* White Text */
+  background-color: #333;
+  /* Dark Grey Background */
+  color: #ffffff;
+  /* White Text */
   box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.2);
 }
+
 .education-item {
-  background-color: #f0f0f0; /* Light Grey Background */
-  color: #000; /* Black Text */
+  background-color: #f0f0f0;
+  /* Light Grey Background */
+  color: #000;
+  /* Black Text */
   padding: 15px;
   margin: 10px 0;
   border-radius: 8px;
@@ -591,15 +669,19 @@ a:hover {
 
 /* Dark Mode */
 .dark-mode .education-item {
-  background-color: #333; /* Dark Grey Background */
-  color: #fff; /* White Text */
+  background-color: #333;
+  /* Dark Grey Background */
+  color: #fff;
+  /* White Text */
   box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.2);
 }
+
 /* Default styling for navigation links */
 /* Default Light Mode Styles */
 /* Default Light Mode */
 .navbar {
-  background: #f8f9fa; /* Light background */
+  background: #f8f9fa;
+  /* Light background */
   padding: 15px;
 }
 
@@ -612,7 +694,8 @@ a:hover {
 
 .navbar ul li a {
   text-decoration: none;
-  color: black; /* Black text in light mode */
+  color: black;
+  /* Black text in light mode */
   padding: 10px 15px;
   border-radius: 5px;
   transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
@@ -620,22 +703,26 @@ a:hover {
 
 /* Dark Mode */
 .dark-mode .navbar {
-  background: #222; /* Dark background */
+  background: #222;
+  /* Dark background */
 }
 
 .dark-mode .navbar ul li a {
-  color: white !important; /* White text in dark mode */
+  color: white !important;
+  /* White text in dark mode */
 }
 
 /* Hover Effect */
 .navbar ul li a:hover {
-  background: #f39c12; /* Orange background on hover */
+  background: #f39c12;
+  /* Orange background on hover */
   color: white;
 }
 
 /* Active Section */
 .navbar ul li a.active {
-  background: #e74c3c; /* Red active background */
+  background: #e74c3c;
+  /* Red active background */
   color: white;
 }
 
@@ -646,29 +733,38 @@ a:hover {
 }
 
 .profile-photo {
-  width: 147px;            /* Adjust size to make it visible */
-  height: 150px;           /* Keep width and height equal for a circle */
-  border-radius: 50%;      /* Ensure circular shape */
-  object-fit: cover;       /* Crop the image */
-  object-position: top;    /* Adjust the position of the image */
+  width: 147px;
+  /* Adjust size to make it visible */
+  height: 150px;
+  /* Keep width and height equal for a circle */
+  border-radius: 50%;
+  /* Ensure circular shape */
+  object-fit: cover;
+  /* Crop the image */
+  object-position: top;
+  /* Adjust the position of the image */
   border: 3px solid white;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease-in-out;
 }
 
 .profile-photo:hover {
-  transform: scale(1.1);   /* Slight hover effect */
+  transform: scale(1.1);
+  /* Slight hover effect */
 }
 
 /* Dark Mode */
 .dark-mode .profile-photo {
-  border: 3px solid #1e90ff; /* Blue border in dark mode */
+  border: 3px solid #1e90ff;
+  /* Blue border in dark mode */
 }
+
 .profile-container {
   width: 5px;
   height: 5px;
   border-radius: 50%;
-  overflow: hidden; /* Hides overflowing parts */
+  overflow: hidden;
+  /* Hides overflowing parts */
 }
 
 video {
@@ -676,6 +772,7 @@ video {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   margin-top: 20px;
 }
+
 .project-demo {
   text-align: center;
   margin: 20px;
@@ -702,6 +799,7 @@ video {
   text-decoration: underline;
   cursor: pointer;
 }
+
 .project-media {
   margin: 10px 0;
 }
@@ -712,6 +810,7 @@ video {
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
+
 /* Co-Curricular Section */
 .co-curricular {
   margin: 30px 0;
@@ -758,7 +857,7 @@ video {
 /* Headings inside Activity Cards */
 .activity-card h3 {
   margin-bottom: 10px;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: #007bff;
 }
 
@@ -777,39 +876,15 @@ video {
 .dark-mode .activity-card b {
   color: #ccc;
 }
-.project-grid h3{
+
+.project-grid h3 {
   color: #007bff;
 }
 
-.contact {
-  padding: 40px;
-}
+.contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
 
-.dark-mode .contact h2 {
-  text-align: center;
-  font-size: 1.5rem;
   color: white;
-  margin-bottom: 40px;
-}
-.dark-mode .contact-container {
-  display: flex;
-  flex-wrap: wrap;
-  /* allows wrapping on smaller screens */
-  justify-content: center;
-  /* centers the cards */
-  gap: 20px;
-  /* space between cards */
-}
-
-.dark-mode .contact-card {
-  background-color: #222;
-  color: white;
-  padding: 20px;
-  border-radius: 10px;
-  width: 300px;
-  /* fixed width for each box */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-.dark-mode .contact-card h3 {
-  color: #007bff !important;
+  /* or any color matching your theme */
 }
