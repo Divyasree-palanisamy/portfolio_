@@ -56,14 +56,13 @@ github: "https://github.com/Divyasree-palanisamy/InternSpace_Explorer_"
   </header>
       <nav className="navbar">
         <ul>
-          <li><a href="#" onClick={() => setActiveSection("Home")}>🏠Home</a></li>
-          <li><a href="#" onClick={() => setActiveSection("Education")}>🎓Education</a></li>
-          <li><a href="#" onClick={() => setActiveSection("Skills")}>🛠️Skills</a></li>
-          <li><a href="#" onClick={() => setActiveSection("Certifications")}>📜Certifications</a></li> 
-          <li><a href="#" onClick={() => setActiveSection("CoCurricular")}>🎯Co-Curricular</a></li>
-
-          <li><a href="#" onClick={() => setActiveSection("Projects")}>💻Projects</a></li>
-          <li><a href="#" onClick={() => setActiveSection("Contact")}>📞Contact</a></li>
+          <li><a href="#" onClick={() => setActiveSection("Home")}>Home</a></li>
+          <li><a href="#" onClick={() => setActiveSection("Education")}>Education</a></li>
+          <li><a href="#" onClick={() => setActiveSection("Skills")}>Skills</a></li>
+          <li><a href="#" onClick={() => setActiveSection("Certifications")}>Certifications</a></li> 
+          <li><a href="#" onClick={() => setActiveSection("CoCurricular")}>Co-Curricular</a></li>
+          <li><a href="#" onClick={() => setActiveSection("Projects")}>Projects</a></li>
+          <li><a href="#" onClick={() => setActiveSection("Contact")}>Contact</a></li>
         </ul>
         <button className="dark-mode-toggle" onClick={toggleDarkMode}>
           {darkMode ? "Light Mode" : "Dark Mode"}
@@ -78,7 +77,7 @@ github: "https://github.com/Divyasree-palanisamy/InternSpace_Explorer_"
     <div className="home-content">
     <img src={myPhoto} alt="Divyasree P" className="profile-photo" />
     <h1>Divyasree P</h1>
-      <p>Computer Science Engineer | FrontEnd Developer
+      <p>Computer Science Engineer | Front-end Developer
       </p>
       <p className="intro-text" >
         This website serves as a digital portfolio of my skills, experiences, and achievements. 
@@ -245,6 +244,8 @@ github: "https://github.com/Divyasree-palanisamy/InternSpace_Explorer_"
     {/* Infosys Springboard Certifications */}
     <div className="certification-category">
       <h3>Infosys Springboard Certifications</h3>
+      <div className="certification-item">
+
       <p>
         <b>Python Foundation</b> (Completed on October 1, 2023): <a
           href="https://drive.google.com/file/d/1986511CRLJ8xIzcqxg00KeLiL9JqKoQB/view?usp=sharing"
@@ -261,11 +262,14 @@ github: "https://github.com/Divyasree-palanisamy/InternSpace_Explorer_"
         >
           View Certificate
         </a>
+        </div>
     </div>
 
     {/* Coursera Certifications */}
     <div className="certification-category">
       <h3>Coursera Certifications</h3>
+      <div className="certification-item">
+
       <p>
        <b>Advanced Relational Database & SQL </b>(Completed on July 26, 2024): <a
           href="https://drive.google.com/file/d/162ghxWnm9otQJMKsUcYTQLD3i6cLsyjw/view?usp=sharing"
@@ -294,10 +298,13 @@ github: "https://github.com/Divyasree-palanisamy/InternSpace_Explorer_"
         </a>
       </p>
     </div>
+    </div>
 
     {/* NPTEL Certifications */}
     <div className="certification-category">
       <h3>NPTEL Certifications</h3>
+      <div className="certification-item">
+
       <p>
         <b>Problem Solving Through Programming in C </b>(Elite, 69%) - July to October 2023: <a
           href="https://drive.google.com/file/d/1Eucl4abgrf-2KFjmU-6PqxZo-4YHJagy/view?usp=sharing"
@@ -335,12 +342,14 @@ github: "https://github.com/Divyasree-palanisamy/InternSpace_Explorer_"
           View Certificate
         </a>
       </p>
-
+</div>
     </div>
 
     {/* Workshops */}
     <div className="certification-category">
       <h3>Workshops</h3>
+      <div className="certification-item">
+
       <p>
         <strong>One-Day National Level Hands-on Workshop on "Transforming Tomorrow with AI"</strong>
         <p><b>Venue : </b>Kalaignarkarunanidhi Institute of Technology, September 21, 2024:</p> <a
@@ -361,6 +370,7 @@ github: "https://github.com/Divyasree-palanisamy/InternSpace_Explorer_"
           View Certificate
         </a>
       </p>
+    </div>
     </div>
   </section>
 )}
