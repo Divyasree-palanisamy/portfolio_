@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./style.css";
 import myPhoto from './assets/photo.jpg';
+import { FaGithub, FaLinkedin, FaCode, FaTrophy, FaEnvelope, FaPhone, FaFileAlt } from 'react-icons/fa';
 
 
 
@@ -83,10 +84,11 @@ github: "https://github.com/Divyasree-palanisamy/InternSpace_Explorer_"
         This website serves as a digital portfolio of my skills, experiences, and achievements. 
         Explore the sections above to learn more about me.
       </p>
-      
-      <p className="quote-text" style={{ color: '#d4af37' , fontFamily: 'Arial' }}>
-  <b>"The only way to do great work is to love what you do."</b>
-</p>
+  <p className="quote-text">
+    <b>"The only way to do great work is to love what you do."</b>
+  </p>
+
+
 
     </div>
   </section>
@@ -99,7 +101,7 @@ github: "https://github.com/Divyasree-palanisamy/InternSpace_Explorer_"
 
     <div className="education-item">
       <h3><span className="highlight">Schooling 📚</span></h3>
-      <p><b>Sri Jayendra Sarawathy Vidhyalaya Matriculation School Ondipudur.</b></p>
+      <p><b>Sri Jayendra Sarawathy Vidhyalaya Matriculation School, Ondipudur.</b></p>
       <p>• Secondary Education – Secured <b>78%</b></p>
 <p>• Higher Secondary Education – Secured <b>85%</b></p>
 
@@ -192,7 +194,7 @@ github: "https://github.com/Divyasree-palanisamy/InternSpace_Explorer_"
         <p><strong>Company:</strong> Livewire</p>
         <p><strong>Duration:</strong> 8th July 2024 – 24th July 2024</p>
         <p><strong>Skills Gained:</strong> HTML, CSS, JavaScript (Frontend), Python (Backend), MySQL</p>
-        <p>Currently working on a personal project, <strong>"Internship Finder"</strong>.</p>
+        <p>Currently working on a personal project, <strong>"InternSpace Explorer"</strong>.</p>
         <p>
           <strong>Internship Certificate:</strong>{" "}
           <a
@@ -452,21 +454,18 @@ github: "https://github.com/Divyasree-palanisamy/InternSpace_Explorer_"
   </section>
 )}
 
-      
-      {/* Projects Section (Enhanced with Embedded Videos) */}
 {activeSection === "Projects" && (
   <section className="projects fade-in">
     <h2>Projects</h2>
     <div className="project-grid">
       {projects.map((project, index) => (
         <div key={index} className="project-card">
-          <h3>{project.name}</h3>
+          <h3 className="project-title">{project.name}</h3>
           <p>{project.description}</p>
-          <p><b>Tech Stack:</b> {project.techStack.join(", ")}</p>
-      
+          <p className="project-tech"><b>Tech Stack:</b> {project.techStack.join(", ")}</p>
           <div className="project-links">
             <a href={project.github} target="_blank" rel="noopener noreferrer" className="github-link">
-              💻 GitHub
+              <FaGithub /> GitHub
             </a>
           </div>
         </div>
@@ -475,74 +474,107 @@ github: "https://github.com/Divyasree-palanisamy/InternSpace_Explorer_"
   </section>
 )}
 
-
 {/* Contact Section */}
-
 {activeSection === "Contact" && (
   <section className="contact fade-in">
-<body class="light-mode">
-  <div class="w-full">
     <h2>Contact</h2>
-  </div>
-</body>
-
-
+    
     <div className="contact-container">
+      {/* Contact Information Card */}
       <div className="contact-card">
         <h3>Contact Information</h3>
-        <p><b>Name :</b> Divyasree.P</p>
-        <p><b>Place : </b>Site no: 15, Sravana Nagar, Nadupalayam Pirivu, 
-        Coimbatore - 641016, Tamil Nadu, India</p>
-        <p><b>Contact Number : </b> 7010669571</p>
+        <div className="contact-item">
+          <span className="contact-label"><b>Name:</b></span>
+          <span className="contact-value">Divyasree.P</span>
+        </div>
+        <div className="contact-item">
+          <span className="contact-label"><b>Location:</b></span>
+          <span className="contact-value">
+            Site no: 15, Sravana Nagar, Nadupalayam Pirivu,<br />
+            Coimbatore - 641016, Tamil Nadu, India
+          </span>
+        </div>
+        <div className="contact-item">
+          <span className="contact-label"><b>Phone:</b></span>
+          <span className="contact-value">
+            <a href="tel:+917010669571">+91 7010669571</a>
+          </span>
+        </div>
       </div>
-      
+
+      {/* Social Media Card */}
       <div className="contact-card">
         <h3>Social Media Links</h3>
-        <p><b>Email ✉ : </b> divyasreep12@gmail.com, kit26.cse17@gmail.com</p>
-        <p><b>LinkedIn 🌐: </b> 
-          <a href="https://www.linkedin.com/in/divya-sree-p-9603b9265" target="_blank" rel="noopener noreferrer">
-           LinkedIn Profile
-          </a>
-        </p>
-        <p><b>GitHub 👨🏻‍💻: </b> 
-          <a href="https://github.com/Divyasree-palanisamy" target="_blank" rel="noopener noreferrer">
-            GitHub Profile
-          </a>
-        </p>
-        <p><b>CodeChef 🍽️: </b>  
+        <div className="contact-item">
+          <span className="contact-icon">✉</span>
+          <span className="contact-value">
+            <a href="mailto:divyasreep12@gmail.com">divyasreep12@gmail.com</a>,<br />
+            <a href="mailto:kit26.cse17@gmail.com">kit26.cse17@gmail.com</a>
+          </span>
+        </div>
+        <div className="contact-item">
+          <span className="contact-icon">🌐</span>
+          <span className="contact-value">
+            <a href="https://www.linkedin.com/in/divya-sree-p-9603b9265" target="_blank" rel="noopener noreferrer">
+              LinkedIn Profile
+            </a>
+          </span>
+        </div>
+        <div className="contact-item">
+          <span className="contact-icon">👨🏻‍💻</span>
+          <span className="contact-value">
+            <a href="https://github.com/Divyasree-palanisamy" target="_blank" rel="noopener noreferrer">
+              GitHub Profile
+            </a>
+          </span>
+        </div>
+        <div className="contact-item">
+          <span className="contact-icon">🍽️</span>
+          <span className="contact-value">
             <a href="https://www.codechef.com/users/divyasreep12" target="_blank" rel="noopener noreferrer">
-        Codechef Profile
-          </a>
-        </p>
-        <p><b>LeetCode 🏆: </b> 
-  <a href="https://leetcode.com/u/divyasreep12/" target="_blank" rel="noopener noreferrer">LeetCode Profile</a>
-</p>
-
+              CodeChef Profile
+            </a>
+          </span>
+        </div>
+        <div className="contact-item">
+          <span className="contact-icon">🏆</span>
+          <span className="contact-value">
+            <a href="https://leetcode.com/u/divyasreep12/" target="_blank" rel="noopener noreferrer">
+              LeetCode Profile
+            </a>
+          </span>
+        </div>
       </div>
+
+      {/* Personal Information Card */}
       <div className="contact-card">
-  <h3>Personal Information</h3>
-  
-  {/* Small Box Inside the Main Card */}
-  <div className="info-box">
-  <p><b>Languages Known:</b></p>
-  <ul>
-    <li><b>English :</b> Fluent (Read, Write, Speak)</li>
-    <li><b>Tamil :</b> Native (Read, Write, Speak)</li>
-  </ul>
-
-    <p><b>Resume:</b> 
-      <a href="https://drive.google.com/file/d/1mZAwpGUmwq4pN6f-cJ8wwlmTBk_mdwzW/view?usp=sharing" 
-         target="_blank" 
-         rel="noopener noreferrer"> View Resume</a>
-    </p>
-  </div>
-</div>
-
-    
+        <h3>Personal Information</h3>
+        <div className="info-box">
+          <h4>Languages Known:</h4>
+          <ul className="language-list">
+            <li>
+              <span className="language-name">English:</span>
+              <span className="language-proficiency">Fluent (Read, Write, Speak)</span>
+            </li>
+            <li>
+              <span className="language-name">Tamil:</span>
+              <span className="language-proficiency">Native (Read, Write, Speak)</span>
+            </li>
+          </ul>
+          
+          <div className="resume-link">
+            <span className="contact-icon">📄</span>
+            <a href="https://drive.google.com/file/d/1mZAwpGUmwq4pN6f-cJ8wwlmTBk_mdwzW/view?usp=sharing" 
+               target="_blank" 
+               rel="noopener noreferrer">
+              View Resume
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 )}
-
 
 
       {/* Footer */}
